@@ -14,8 +14,8 @@
   </head>
   <body>
     <div class="wrapper">
-      <div class="one-page-scroll">
-        <section class="section hero is-active" id="hero">
+      <div class="maincontent" id="fullpage">
+        <section class="section hero" data-anchor="hero">
           <header class="header">
             <div class="container header__content"><a class="logo" href="/"><img class="logo__img" src="./images/logo.png" alt="logo"></a>
               <div class="header__menu">
@@ -27,7 +27,7 @@
                     <li class="nav-main__item"><a class="nav-main__link" href="#menu">Меню</a></li>
                     <li class="nav-main__item"><a class="nav-main__link" href="#reviews">Отзывы</a></li>
                     <li class="nav-main__item"><a class="nav-main__link" href="#video">Как мы работаем</a></li>
-                    <li class="nav-main__item"><a class="nav-main__link" href="#s-map">Контакты</a></li>
+                    <li class="nav-main__item"><a class="nav-main__link" href="#map">Контакты</a></li>
                   </ul>
                 </nav>
               </div>
@@ -77,7 +77,7 @@
             <div class="hero__pic"><img class="hero__pic-img" src="./images/hero/choco-bars.png" alt="Chocolate bars"></div>
           </div>
         </section>
-        <section class="section about" id="about">
+        <section class="section about fp-auto-height-responsive" data-anchor="about">
           <div class="container about__content">
             <h2 class="section-title">почему chocco?</h2>
             <div class="about__desc">
@@ -126,183 +126,69 @@
             </div>
           </div>
         </section>
-        <section class="section slider" id="slider">
+        <section class="section slider fp-auto-height-responsive" data-anchor="slider">
           <div class="container slider__content">
-            <div class="slider__wrap">
-              <ul class="slider__list">
-                <li class="slider__item">
-                  <div class="slider__left">
-                    <div class="slider__pic"><img class="slider__img" src="./images/slider/seaweed.png" alt="“Морские водоросли 1”"></div>
+            <ul class="slider__list owl-carousel owl-theme">
+              <li class="slider__item">
+                <div class="slider__left">
+                  <div class="slider__pic"><img class="slider__img" src="./images/slider/seaweed.png" alt="“Морские водоросли”"></div>
+                </div>
+                <div class="slider__right">
+                  <h3 class="slider__title"> 
+                    <p>Батончик </p>
+                    <p>“Морские водоросли”</p>
+                  </h3>
+                  <div class="slider__compos">
+                    <div class="slider__compos-title">Состав:</div>
+                    <div class="slider__compos-text">Гранола из морских водорослей с овсом, миндалем и тыквенными семечками. В состав также входят: сухое молоко, заменитель сахара и какао бобы.</div>
                   </div>
-                  <div class="slider__right">
-                    <h3 class="slider__title"> 
-                      <p>Батончик </p>
-                      <p>“Морские водоросли 1”</p>
-                    </h3>
-                    <div class="slider__compos">
-                      <div class="slider__compos-title">Состав:</div>
-                      <div class="slider__compos-text">Гранола из морских водорослей с овсом, миндалем и тыквенными семечками. В состав также входят: сухое молоко, заменитель сахара и какао бобы.</div>
+                  <div class="slider__desc">
+                    <div class="slider__desc-col">
+                      <div class="slider__desc-title">Калорийность</div>
+                      <div class="slider__desc-text">120 ккал</div>
                     </div>
-                    <div class="slider__desc">
-                      <div class="slider__desc-col">
-                        <div class="slider__desc-title">Калорийность</div>
-                        <div class="slider__desc-text">120 ккал</div>
-                      </div>
-                      <div class="slider__desc-col">
-                        <div class="slider__desc-title">Вес</div>
-                        <div class="slider__desc-text">98 грамм</div>
-                      </div>
-                    </div>
-                    <div class="slider__bottom">
-                      <div class="slider__price">140 ₽</div><a class="btn slider__btn" href="#order">Заказать</a>
+                    <div class="slider__desc-col">
+                      <div class="slider__desc-title">Вес</div>
+                      <div class="slider__desc-text">98 грамм</div>
                     </div>
                   </div>
-                </li>
-                <li class="slider__item">
-                  <div class="slider__left">
-                    <div class="slider__pic"><img class="slider__img" src="./images/slider/grape.png" alt="“Гранола виноград 2”"></div>
+                  <div class="slider__bottom">
+                    <div class="slider__price">140 ₽</div><a class="btn slider__btn" href="#order">Заказать</a>
                   </div>
-                  <div class="slider__right">
-                    <h3 class="slider__title"> 
-                      <p>Батончик </p>
-                      <p>“Гранола виноград 2”</p>
-                    </h3>
-                    <div class="slider__compos">
-                      <div class="slider__compos-title">Состав:</div>
-                      <div class="slider__compos-text">Гранола из винограда, грецкого ореха и кунжутных семечек. В состав также входят: сухое молоко, заменитель сахара и какао бобы.</div>
-                    </div>
-                    <div class="slider__desc">
-                      <div class="slider__desc-col">
-                        <div class="slider__desc-title">Калорийность</div>
-                        <div class="slider__desc-text">110 ккал</div>
-                      </div>
-                      <div class="slider__desc-col">
-                        <div class="slider__desc-title">Вес</div>
-                        <div class="slider__desc-text">95 грамм</div>
-                      </div>
-                    </div>
-                    <div class="slider__bottom">
-                      <div class="slider__price">140 ₽</div><a class="btn slider__btn" href="#order">Заказать</a>
-                    </div>
+                </div>
+              </li>
+              <li class="slider__item">
+                <div class="slider__left">
+                  <div class="slider__pic"><img class="slider__img" src="./images/slider/grape.png" alt="“Гранола виноград”"></div>
+                </div>
+                <div class="slider__right">
+                  <h3 class="slider__title"> 
+                    <p>Батончик </p>
+                    <p>“Гранола виноград”</p>
+                  </h3>
+                  <div class="slider__compos">
+                    <div class="slider__compos-title">Состав:</div>
+                    <div class="slider__compos-text">Гранола из винограда, грецкого ореха и кунжутных семечек. В состав также входят: сухое молоко, заменитель сахара и какао бобы.</div>
                   </div>
-                </li>
-                <li class="slider__item">
-                  <div class="slider__left">
-                    <div class="slider__pic"><img class="slider__img" src="./images/slider/seaweed.png" alt="“Морские водоросли 3”"></div>
-                  </div>
-                  <div class="slider__right">
-                    <h3 class="slider__title"> 
-                      <p>Батончик </p>
-                      <p>“Морские водоросли 3”</p>
-                    </h3>
-                    <div class="slider__compos">
-                      <div class="slider__compos-title">Состав:</div>
-                      <div class="slider__compos-text">Гранола из морских водорослей с овсом, миндалем и тыквенными семечками. В состав также входят: сухое молоко, заменитель сахара и какао бобы.</div>
+                  <div class="slider__desc">
+                    <div class="slider__desc-col">
+                      <div class="slider__desc-title">Калорийность</div>
+                      <div class="slider__desc-text">110 ккал</div>
                     </div>
-                    <div class="slider__desc">
-                      <div class="slider__desc-col">
-                        <div class="slider__desc-title">Калорийность</div>
-                        <div class="slider__desc-text">120 ккал</div>
-                      </div>
-                      <div class="slider__desc-col">
-                        <div class="slider__desc-title">Вес</div>
-                        <div class="slider__desc-text">98 грамм</div>
-                      </div>
-                    </div>
-                    <div class="slider__bottom">
-                      <div class="slider__price">140 ₽</div><a class="btn slider__btn" href="#order">Заказать</a>
+                    <div class="slider__desc-col">
+                      <div class="slider__desc-title">Вес</div>
+                      <div class="slider__desc-text">95 грамм</div>
                     </div>
                   </div>
-                </li>
-                <li class="slider__item">
-                  <div class="slider__left">
-                    <div class="slider__pic"><img class="slider__img" src="./images/slider/grape.png" alt="“Гранола виноград 4”"></div>
+                  <div class="slider__bottom">
+                    <div class="slider__price">140 ₽</div><a class="btn slider__btn" href="#order">Заказать</a>
                   </div>
-                  <div class="slider__right">
-                    <h3 class="slider__title"> 
-                      <p>Батончик </p>
-                      <p>“Гранола виноград 4”</p>
-                    </h3>
-                    <div class="slider__compos">
-                      <div class="slider__compos-title">Состав:</div>
-                      <div class="slider__compos-text">Гранола из винограда, грецкого ореха и кунжутных семечек. В состав также входят: сухое молоко, заменитель сахара и какао бобы.</div>
-                    </div>
-                    <div class="slider__desc">
-                      <div class="slider__desc-col">
-                        <div class="slider__desc-title">Калорийность</div>
-                        <div class="slider__desc-text">110 ккал</div>
-                      </div>
-                      <div class="slider__desc-col">
-                        <div class="slider__desc-title">Вес</div>
-                        <div class="slider__desc-text">95 грамм</div>
-                      </div>
-                    </div>
-                    <div class="slider__bottom">
-                      <div class="slider__price">140 ₽</div><a class="btn slider__btn" href="#order">Заказать</a>
-                    </div>
-                  </div>
-                </li>
-                <li class="slider__item">
-                  <div class="slider__left">
-                    <div class="slider__pic"><img class="slider__img" src="./images/slider/seaweed.png" alt="“Морские водоросли 5”"></div>
-                  </div>
-                  <div class="slider__right">
-                    <h3 class="slider__title"> 
-                      <p>Батончик </p>
-                      <p>“Морские водоросли 5”</p>
-                    </h3>
-                    <div class="slider__compos">
-                      <div class="slider__compos-title">Состав:</div>
-                      <div class="slider__compos-text">Гранола из морских водорослей с овсом, миндалем и тыквенными семечками. В состав также входят: сухое молоко, заменитель сахара и какао бобы.</div>
-                    </div>
-                    <div class="slider__desc">
-                      <div class="slider__desc-col">
-                        <div class="slider__desc-title">Калорийность</div>
-                        <div class="slider__desc-text">120 ккал</div>
-                      </div>
-                      <div class="slider__desc-col">
-                        <div class="slider__desc-title">Вес</div>
-                        <div class="slider__desc-text">98 грамм</div>
-                      </div>
-                    </div>
-                    <div class="slider__bottom">
-                      <div class="slider__price">140 ₽</div><a class="btn slider__btn" href="#order">Заказать</a>
-                    </div>
-                  </div>
-                </li>
-                <li class="slider__item">
-                  <div class="slider__left">
-                    <div class="slider__pic"><img class="slider__img" src="./images/slider/grape.png" alt="“Гранола виноград 6”"></div>
-                  </div>
-                  <div class="slider__right">
-                    <h3 class="slider__title"> 
-                      <p>Батончик </p>
-                      <p>“Гранола виноград 6”</p>
-                    </h3>
-                    <div class="slider__compos">
-                      <div class="slider__compos-title">Состав:</div>
-                      <div class="slider__compos-text">Гранола из винограда, грецкого ореха и кунжутных семечек. В состав также входят: сухое молоко, заменитель сахара и какао бобы.</div>
-                    </div>
-                    <div class="slider__desc">
-                      <div class="slider__desc-col">
-                        <div class="slider__desc-title">Калорийность</div>
-                        <div class="slider__desc-text">110 ккал</div>
-                      </div>
-                      <div class="slider__desc-col">
-                        <div class="slider__desc-title">Вес</div>
-                        <div class="slider__desc-text">95 грамм</div>
-                      </div>
-                    </div>
-                    <div class="slider__bottom">
-                      <div class="slider__price">140 ₽</div><a class="btn slider__btn" href="#order">Заказать</a>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div><a class="slider__arrow slider__arrow--left" href="#" id="prevBtn"></a><a class="slider__arrow slider__arrow--right" href="#" id="nextBtn"></a>
+                </div>
+              </li>
+            </ul>
           </div>
         </section>
-        <section class="section team" id="team">
+        <section class="section team fp-auto-height-responsive" data-anchor="team">
           <div class="container team__content">
             <h2 class="section-title">Команда</h2>
             <ul class="team__acco team-acco">
@@ -345,7 +231,7 @@
             </ul>
           </div>
         </section>
-        <section class="section menu" id="menu">
+        <section class="section menu" data-anchor="menu">
           <div class="container menu__content">
             <h2 class="section-title menu__title">Меню</h2>
             <ul class="menu-acco">
@@ -385,7 +271,7 @@
             </ul>
           </div>
         </section>
-        <section class="section reviews" id="reviews">
+        <section class="section reviews fp-auto-height-responsive" data-anchor="reviews">
           <div class="container reviews__content">
             <h2 class="section-title">Отзывы</h2>
             <ul class="reviews__list owl-carousel owl-theme">
@@ -433,7 +319,7 @@
             </ul>
           </div>
         </section>
-        <section class="section video" id="video">
+        <section class="section video" data-anchor="video">
           <div class="container video__content">
             <h2 class="section-title">Как мы работаем</h2>
             <div class="player hidden">
@@ -454,7 +340,7 @@
             </div>
           </div>
         </section>
-        <section class="section order" id="order">
+        <section class="section order fp-auto-height-responsive" data-anchor="order">
           <div class="container order__content">
             <h2 class="section-title order__title">Закажите доставку</h2>
             <div class="order__form">
@@ -536,45 +422,47 @@
             </div>
           </div>
         </section>
-        <section class="section map" id="s-map">
-          <div class="map__container" id="map"></div>
-          <footer class="footer">
-            <div class="container footer__content">
-              <div class="footer__col">
-                <address class="contacts">
-                  <div class="contacts__address">Москва, ул.Новый Арбат, д.31/12</div><a class="contacts__link" href="tel:+88009039090">8 800 903 90 90
-                    <svg class="contacts__link-icon">
-                      <use xlink:href="./images/icons/sprite.svg#phone"></use>
-                    </svg></a>
-                </address>
-              </div>
-              <div class="footer__col">
-                <ul class="socials">
-                  <li class="socials__item"><a class="socials__link socials__link--vk" href="#">
-                      <svg class="socials__icon">
-                        <use xlink:href="./images/icons/sprite.svg#vk"></use>
-                      </svg></a></li>
-                  <li class="socials__item"><a class="socials__link socials__link--fb" href="#">
-                      <svg class="socials__icon">
-                        <use xlink:href="./images/icons/sprite.svg#fb"></use>
-                      </svg></a></li>
-                  <li class="socials__item"><a class="socials__link socials__link--inst" href="#">
-                      <svg class="socials__icon">
-                        <use xlink:href="./images/icons/sprite.svg#inst"></use>
-                      </svg></a></li>
-                  <li class="socials__item"><a class="socials__link socials__link--twitter" href="#">
-                      <svg class="socials__icon">
-                        <use xlink:href="./images/icons/sprite.svg#twitter"></use>
-                      </svg></a></li>
-                </ul>
-              </div>
+        <section class="section map" data-anchor="map">
+          <div class="map__content">
+            <div class="map__wrap">
+              <div class="map__container" id="yMap"></div>
             </div>
-          </footer>
+            <footer class="footer">
+              <div class="container footer__content">
+                <div class="footer__col">
+                  <address class="contacts">
+                    <div class="contacts__address">Москва, ул.Новый Арбат, д.31/12</div><a class="contacts__link" href="tel:+88009039090">8 800 903 90 90
+                      <svg class="contacts__link-icon">
+                        <use xlink:href="./images/icons/sprite.svg#phone"></use>
+                      </svg></a>
+                  </address>
+                </div>
+                <div class="footer__col">
+                  <ul class="socials">
+                    <li class="socials__item"><a class="socials__link socials__link--vk" href="#">
+                        <svg class="socials__icon">
+                          <use xlink:href="./images/icons/sprite.svg#vk"></use>
+                        </svg></a></li>
+                    <li class="socials__item"><a class="socials__link socials__link--fb" href="#">
+                        <svg class="socials__icon">
+                          <use xlink:href="./images/icons/sprite.svg#fb"></use>
+                        </svg></a></li>
+                    <li class="socials__item"><a class="socials__link socials__link--inst" href="#">
+                        <svg class="socials__icon">
+                          <use xlink:href="./images/icons/sprite.svg#inst"></use>
+                        </svg></a></li>
+                    <li class="socials__item"><a class="socials__link socials__link--twitter" href="#">
+                        <svg class="socials__icon">
+                          <use xlink:href="./images/icons/sprite.svg#twitter"></use>
+                        </svg></a></li>
+                  </ul>
+                </div>
+              </div>
+            </footer>
+          </div>
         </section>
+        <!--include ../common/nav-fixed.pug-->
       </div>
-      <nav class="nav-fixed">
-        <ul class="nav-fixed__list"></ul>
-      </nav>
     </div><a class="hamburger-menu-link" href="#" id="hamburgerMenu"><span></span><span></span><span></span></a>
     <div class="hamburger-overlay" id="hamburgerOverlay">
       <div class="hamburger-overlay__menu">
@@ -586,7 +474,7 @@
             <li class="nav-main__item"><a class="nav-main__link" href="#menu">Меню</a></li>
             <li class="nav-main__item"><a class="nav-main__link" href="#reviews">Отзывы</a></li>
             <li class="nav-main__item"><a class="nav-main__link" href="#video">Как мы работаем</a></li>
-            <li class="nav-main__item"><a class="nav-main__link" href="#s-map">Контакты</a></li>
+            <li class="nav-main__item"><a class="nav-main__link" href="#map">Контакты</a></li>
           </ul>
         </nav>
       </div>
